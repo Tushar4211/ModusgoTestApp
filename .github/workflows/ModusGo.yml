@@ -47,4 +47,4 @@ jobs:
           context: .
           file: ./modusgo/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/modusgo:latest, ${{ secrets.DOCKERHUB_USERNAME }}/dockerfordotnetapi:${{ github.run_number }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/ModusgoTestAppWeb:latest, ${{ secrets.DOCKERHUB_USERNAME }}/dockerfordotnetapi:${{ github.run_number }}
