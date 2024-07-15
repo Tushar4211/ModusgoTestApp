@@ -1,0 +1,4 @@
+window.apiGatewayEndpoint={
+ // apiUrl: "https://modusgoapi.tretainfotech.com/api/v1/"
+  apiUrl: "https://localhost:5001/api/v1/"
+}
