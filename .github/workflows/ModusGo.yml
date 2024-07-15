@@ -1,6 +1,3 @@
-
-
-
 # This is a basic workflow to help you get started with Actions
 name: CI-build-and-push-image-for-dotnetapp
 
@@ -48,6 +45,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./ModusgoTestAppWeb/modusgo/Dockerfile
+          file: ./modusgo/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/modusgo:latest, ${{ secrets.DOCKERHUB_USERNAME }}/dockerfordotnetapi:${{ github.run_number }}
